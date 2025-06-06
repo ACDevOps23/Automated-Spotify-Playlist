@@ -4,7 +4,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 year_to_listen = input("What year hot hits would you like to listen too? (YYY-MM-DD): ")
-URL = f"https://www.billboard.com/charts/hot-100/{year_to_listen}/" #web scrapes title songs from a specific year
+URL = f"https:/website/{year_to_listen}/" #web scrapes title songs from a specific year
 
 response = requests.get(URL)
 hot_hits_page = response.text
